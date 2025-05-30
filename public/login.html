@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Login do site de locação de lanchas">
+  <meta name="author" content="OceanCoders">
+  <title>Login</title>
+  <link rel="stylesheet" href="../style/login.css" />
+  <link rel="shortcut icon" href="../assets/images/favicon_logo_azul_2.png" type="image/x-icon">
+</head>
+<body>
+  <div class="login-box">
+    <img src="../assets/images/logo_azul.png" alt="Logo" class="logo">
+
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Usuário" required>
+      <input type="password" id="password" placeholder="Senha" required>
+      <div class="options">
+        <label><input type="checkbox"> Manter conectado</label>
+        <a href="./recuperar_conta.html">esqueceu a senha?</a>
+      </div>
+      <button type="submit">LOGIN</button>
+    </form>
+
+    <p id="message"></p>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>
