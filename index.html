@@ -1,86 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site de locação de lanchas" />
+    <meta name="author" content="OceanCoders" />
+    <title>Passeios marítimos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon_logo_azul_2.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <nav class="nav">
-        <ul class="lista-nav">
-            <li class="lista-li">
-                <a href="#"><img src="imgs/Button → SVG.svg" alt=""></a>
-            </li>
-            <li>
-                <a href="">
-                    <p class="escolha">Escolha sua lancha</p>
-                </a>
-            </li>
-        </ul>
+      <ul class="lista-nav">
+        <li class="lista-li">
+          <a href="#"><img src="./assets/images/Button → SVG.svg" alt="" /></a>
+        </li>
+        <li>
+          <a class="link-sem-underline" href="">
+            <p class="escolha">Escolha sua lancha</p>
+          </a>
+        </li>
+      </ul>
 
-        <img class="logo" src="imgs/Sem Título-1.png" alt="">
+      <a href="./public/login.html"
+        ><img
+          class="logo"
+          src="./assets/images/logo.png"
+          alt="Logo da empresa passeios marítimos"
+          title="Logo"
+      /></a>
 
-        <div class="nacionalidades">
-            <img src="imgs/f6b65019a67d8737abb53a5c6c19f2672696d091.png" alt="">
-            <img src="imgs/ed6db36120bd977917a6b518f20fafd029e11de2.png" alt="">
-            <img src="imgs/c5edb2a8657eb0639edbf6f3b13aca065da1e4df.png" alt="">
-        </div>
+      <div class="nacionalidades">
+        <img
+          src="./assets/images/bandeira_brasil.png"
+          alt="Bandeira do Brasil"
+          title="Brasil"
+        />
+        <img
+          src="./assets/images/badeira_estados_unidos.png"
+          alt="Bandeira dos Estados Unidos"
+          title="Estados Unidos"
+        />
+        <img
+          src="./assets/images/bandeira_espanha.png"
+          alt="Bandeira da Espanha"
+          title="Espanha"
+        />
+      </div>
     </nav>
 
     <main class="main">
-        <div class="conteudo-flex">
-            <div class="coluna-lancha">
-                <div class="container">
-                    <p class="passeios">Passeios Marítimos > Lanchas</p>
-                    <h1 class="h1-passeios">LANCHAS: <br> ESCOLHA O <br> SEU <br> MODELO</h1>
-                    <a href="">
-                        <p class="p-passeios">Reservar</p>
-                    </a>
-                </div>
-                <video class="primeiro-video" muted autoplay loop src="videos/SaveClip.App_AQNQh5Am_qOFBynV5cl5phHOXPZMCTFkViLZAYLM5FpE0e5HUG6pt56efRO5VhbvDGwTDyAMQ7XmtnHZu5Yb8J9bUZaGCIDVlF7oGjk.mp4"></video>
-            </div>
-            <div class="coluna-video-texto">
-                <video class="segundo-video" muted autoplay loop src="videos/SaveClip.App_AQNntJabhZzWNNziX6A6IB8qC5gbhFXkzSd3bL3NK6fUcDuzW744rb5iP869jcWJVZSYIf_uS_heMVd7ebJ-NKWT44vLiUaNkxuMihs.mp4"></video>
-                <h1 class="experiencia-texto">SUA EXPERIÊNCIA <br>INESQUECÍVEL <br> COMEÇA AQUI - <br> ENCONTRE A <br> LANCHA IDEAL</h1>
-            </div>
+      <div class="conteudo-flex">
+        <div class="coluna-lancha">
+          <div class="container">
+            <p class="passeios">Passeios Marítimos > Lanchas</p>
+            <h1 class="h1-passeios">
+              LANCHAS: <br />
+              ESCOLHA O <br />
+              SEU <br />
+              MODELO
+            </h1>
+            <a class="link-sem-underline" href="">
+              <p class="p-passeios">Reservar</p>
+            </a>
+          </div>
+          <video
+            class="primeiro-video"
+            muted
+            autoplay
+            loop
+            src="./assets/videos/video_cliente.mp4"
+          ></video>
         </div>
+        <div class="coluna-video-texto">
+          <video
+            class="segundo-video"
+            muted
+            autoplay
+            loop
+            src="./assets/videos/video_lanchas_doca.mp4"
+          ></video>
+          <h1 class="experiencia-texto">
+            SUA EXPERIÊNCIA <br />INESQUECÍVEL <br />
+            COMEÇA AQUI - <br />
+            ENCONTRE A <br />
+            LANCHA IDEAL
+          </h1>
+        </div>
+      </div>
     </main>
-    <section class="section-perguntas">
-        <h1 class="section-titulo">Perguntas Frequentes</h1>
-        <div>
-            <div class="pergunta">
-                <p class="pergunta-pergunta"><a href="">Quais as vantagens por alugar uma lancha da Passeios Marítimos?</a></p>
-                <p class="pergunta-pergunta"><a href="">Como alugar uma lancha?</a></p>
-                <p class="pergunta-pergunta"><a href="">O que avaliar para encontrar a lancha ideal?</a></p>
+    <section class="section-perguntas py-5">
+      <h1 class="section-titulo">Perguntas Frequentes</h1>
+      <div>
+        <div class="pergunta">
+          <p class="pergunta-pergunta">
+            <a
+              data-bs-toggle="collapse"
+              href="#collapsePergunta1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#collapsePergunta1"
+              >Quais as vantagens por alugar uma lancha da Passeios
+              Marítimos?</a
+            >
+          </p>
+          <div class="collapse" id="collapsePergunta1" style="max-width: 628px">
+            <div class="resposta-pergunta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              illum consequatur inventore distinctio ullam incidunt pariatur,
+              nulla, a iste fuga eveniet aliquam quia provident aperiam quis.
+              Omnis eos doloribus earum.
             </div>
+          </div>
+          <p class="pergunta-pergunta">
+            <a
+              data-bs-toggle="collapse"
+              href="#collapsePergunta2"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#collapsePergunta2"
+              >Como alugar uma lancha?</a
+            >
+          </p>
+          <div class="collapse" id="collapsePergunta2" style="max-width: 628px">
+            <div class="resposta-pergunta">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto omnis provident excepturi quas magnam eius deleniti
+              ipsa deserunt, hic non placeat vel dolorum cum doloremque
+              voluptatibus veritatis atque laborum quidem.
+            </div>
+          </div>
+          <p class="pergunta-pergunta">
+            <a
+              data-bs-toggle="collapse"
+              href="#collapsePergunta3"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#collapsePergunta3"
+              >O que avaliar para encontrar a lancha ideal?</a
+            >
+          </p>
+          <div class="collapse" id="collapsePergunta3" style="max-width: 628px">
+            <div class="resposta-pergunta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              fuga quas eos pariatur eaque ipsa odit aspernatur autem? Saepe
+              modi repellendus nesciunt hic tenetur, nemo in odio dicta labore
+              cupiditate.
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="footer-main">
-            <ul class="lista-footer">
-                <li class="lista-item-footer"><a href="">INICIO</a></li>
-                <li class="lista-item-footer"><a href="">SOBRE A PASSEIOS MARÍTIMOS</a></li>
-                <li class="lista-item-footer"><a href="">ESCOLHA A SUA LANCHA</a></li>
-                <li class="lista-item-footer"><a href="">CONTATO</a></li>
-            </ul>
-            <ul class="encontrar-footer">
-                <h3 class="encontrar-titulo-footer">ONDE NOS ENCONTRAR</h3>
-                <li>
-                    <p class="encontrar-item-footer">Casa do Jacaré, Cabedelo</p>
-                </li>
-                <li>
-                    <p class="encontrar-item-footer">contato@passeiosmaritimos.com.br</p>
-                </li>
-            </ul>
-            <img class="imagem-footer" src="imgs/SaveClip.App_429332579_410154611695531_3947217341887229801_n-removebg-preview.png" alt="">
-        </div>
-        <p class="direitos-footer">
-            © 2025 Passeios Marítimos - Todos os direitos reservados.
-        </p>
+      <div class="footer-main">
+        <ul class="lista-footer">
+          <li class="lista-item-footer"><a href="#">INICIO</a></li>
+          <li class="lista-item-footer">
+            <a href="">SOBRE A PASSEIOS MARÍTIMOS</a>
+          </li>
+          <li class="lista-item-footer"><a href="">ESCOLHA A SUA LANCHA</a></li>
+          <li class="lista-item-footer"><a href="">CONTATO</a></li>
+        </ul>
+        <ul class="encontrar-footer">
+          <h3 class="encontrar-titulo-footer">ONDE NOS ENCONTRAR</h3>
+          <li>
+            <p class="encontrar-item-footer">Casa do Jacaré, Cabedelo</p>
+          </li>
+          <li>
+            <p class="encontrar-item-footer">
+              contato@passeiosmaritimos.com.br
+            </p>
+          </li>
+        </ul>
+      </div>
+      <p class="direitos-footer">
+        © 2025 Passeios Marítimos - Todos os direitos reservados.
+      </p>
     </footer>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
