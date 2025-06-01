@@ -14,6 +14,7 @@ body {
 
 .navbar {
   background-color: transparent !important;
+  border-bottom: 1px solid hsla(0, 0%, 90%, 0.849);
 }
 
 .navbar-brand {
@@ -21,8 +22,8 @@ body {
 }
 
 .navbar-logo {
-    height: 4rem;
-    width: auto;
+  height: 4rem;
+  width: auto;
 }
 
 .nav-item {
