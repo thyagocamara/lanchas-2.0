@@ -120,9 +120,7 @@
                     <a class="nav-link" href="./carrinho.html">Carrinho</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./lanchas.html"
-                      >Catálogo</a
-                    >
+                    <a class="nav-link" href="./lanchas.html">Catálogo</a>
                   </li>
                   <li class="nav-item dropdown" style="display: none">
                     <a
@@ -171,33 +169,17 @@
     <main class="px-4 pt-4 pb-5">
       <div class="col-md-7 col-lg-8" id="main">
         <h4 class="mb-3">Endereço de Cobrança</h4>
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" id="formularioCarrinho" novalidate>
           <div class="row g-3">
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="firstName" required />
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required />
               <div class="invalid-feedback">O nome é obrigatório.</div>
             </div>
             <div class="col-sm-6">
-              <label for="lastName" class="form-label">Sobrenome</label>
-              <input type="text" class="form-control" id="lastName" required />
+              <label for="sobrenome" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="sobrenome" required />
               <div class="invalid-feedback">O sobrenome é obrigatório.</div>
-            </div>
-            <div class="col-12">
-              <label for="username" class="form-label">Usuário</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">@</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="username"
-                  placeholder="Usuário"
-                  required
-                />
-                <div class="invalid-feedback">
-                  O nome de usuário é obrigatório.
-                </div>
-              </div>
             </div>
             <div class="col-12">
               <label for="email" class="form-label"
@@ -215,88 +197,74 @@
               </div>
             </div>
             <div class="col-12">
-              <label for="address" class="form-label">Endereço</label>
+              <label for="telefone" class="form-label">Telefone</label>
               <input
-                type="text"
+                type="tel"
                 class="form-control"
-                id="address"
-                placeholder="Rua Exemplo, 123"
+                id="telefone"
+                placeholder="(XX) XXXXX-XXXX"
+                pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
                 required
               />
-              <div class="invalid-feedback">Informe o endereço para envio.</div>
+              <div class="invalid-feedback">O telefone é obrigatório.</div>
+            </div>
+            <hr class="my-4" />
+            <h4 class="mb-3">Detalhes da Locação</h4>
+            <div class="row g-1">
+              <div class="col-12">
+                <label for="tipoDeEmbarcacao" class="form-label">Tipo de Lancha</label>
+                <select class="form-select" id="tipoDeEmbarcacao" required>
+                  <option value="">Escolha...</option>
+                  <option>Lancha de Passeio</option>
+                  <option>Lancha de Pesca</option>
+                  <option>Lancha de Velocidade</option>
+                </select>
+                <div class="invalid-feedback">Selecione um tipo de lancha.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="dataDeInicio" class="form-label">Data de Início</label>
+              <input
+                type="date"
+                class="form-control"
+                id="dataDeInicio"
+                required
+              />
+              <div class="invalid-feedback">
+                A data de início é obrigatória.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="dataDeTermino" class="form-label">Data de Término</label>
+              <input type="date" class="form-control" id="dataDeTermino" required />
+              <div class="invalid-feedback">
+                A data de término é obrigatória.
+              </div>
             </div>
             <div class="col-12">
-              <label for="address2" class="form-label"
-                >Complemento
-                <span class="text-body-secondary">(opcional)</span></label
+              <label for="localDeRetirada" class="form-label"
+                >Local de Retirada</label
               >
               <input
                 type="text"
                 class="form-control"
-                id="address2"
-                placeholder="Apartamento, bloco etc."
+                id="localDeRetirada"
+                placeholder="localDeRetirada"
+                required
               />
+              <div class="invalid-feedback">Informe o localDeRetirada.</div>
             </div>
-            <div class="col-md-5">
-              <label for="country" class="form-label">País</label>
-              <select class="form-select" id="country" required>
-                <option value="">Escolha...</option>
-                <option selected>Brasil</option>
-              </select>
-              <div class="invalid-feedback">Selecione um país válido.</div>
+            <div class="col-12">
+              <label for="solicitaoAdicional" class="form-label"
+                >Solicitações Adicionais <span class="text-body-secondary">(opcional)</span></label
+              >
+              <textarea
+                class="form-control"
+                id="solicitacaoAdicional"
+                rows="3"
+                placeholder="Exemplo: Equipamentos, Serviços, etc."
+              ></textarea>
             </div>
-            <div class="col-md-4">
-              <label for="state" class="form-label">Estado</label>
-              <select class="form-select" id="state" required>
-                <option value="">Escolha...</option>
-                <option>Acre</option>
-                <option>Alagoas</option>
-                <option>Amapá</option>
-                <option>Amazonas</option>
-                <option>Bahia</option>
-                <option>Ceará</option>
-                <option>Distrito Federal</option>
-                <option>Espírito Santo</option>
-                <option>Goiás</option>
-                <option>Maranhão</option>
-                <option>Mato Grosso</option>
-                <option>Mato Grosso do Sul</option>
-                <option>Minas Gerais</option>
-                <option>Pará</option>
-                <option>Paraíba</option>
-                <option>Paraná</option>
-                <option>Pernambuco</option>
-                <option>Piauí</option>
-                <option>Rio de Janeiro</option>
-                <option>Rio Grande do Norte</option>
-                <option>Rio Grande do Sul</option>
-                <option>Rondônia</option>
-                <option>Roraima</option>
-                <option>Santa Catarina</option>
-                <option>São Paulo</option>
-                <option>Sergipe</option>
-                <option>Tocantins</option>
-              </select>
-              <div class="invalid-feedback">Informe um estado válido.</div>
-            </div>
-            <div class="col-md-3">
-              <label for="zip" class="form-label">CEP</label>
-              <input type="text" class="form-control" id="zip" required />
-              <div class="invalid-feedback">O CEP é obrigatório.</div>
-            </div>
-          </div>
-          <hr class="my-4" />
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address" />
-            <label class="form-check-label" for="same-address">
-              O endereço de entrega é o mesmo que o de cobrança
-            </label>
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info" />
-            <label class="form-check-label" for="save-info">
-              Salvar essas informações para a próxima vez
-            </label>
           </div>
           <hr class="my-4" />
           <h4 class="mb-3">Pagamento</h4>
@@ -304,7 +272,7 @@
             <div class="form-check">
               <input
                 id="credit"
-                name="paymentMethod"
+                name="metodoDePagamento"
                 type="radio"
                 class="form-check-input"
                 checked
@@ -315,7 +283,7 @@
             <div class="form-check">
               <input
                 id="debit"
-                name="paymentMethod"
+                name="metodoDePagamento"
                 type="radio"
                 class="form-check-input"
                 required
@@ -324,55 +292,13 @@
             </div>
             <div class="form-check">
               <input
-                id="paypal"
-                name="paymentMethod"
+                id="Espécie"
+                name="metodoDePagamento"
                 type="radio"
                 class="form-check-input"
                 required
               />
-              <label class="form-check-label" for="paypal">Espécie</label>
-            </div>
-          </div>
-          <div class="row gy-3">
-            <div class="col-md-6">
-              <label for="cc-name" class="form-label">Nome no Cartão</label>
-              <input type="text" class="form-control" id="cc-name" required />
-              <small class="text-body-secondary"
-                >Nome completo como aparece no cartão</small
-              >
-              <div class="invalid-feedback">O nome no cartão é obrigatório</div>
-            </div>
-            <div class="col-md-6">
-              <label for="cc-number" class="form-label">Número do Cartão</label>
-              <input type="text" class="form-control" id="cc-number" required />
-              <div class="invalid-feedback">
-                O número do cartão é obrigatório
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="cc-expiration" class="form-label">Validade</label>
-              <input
-                type="text"
-                class="form-control"
-                id="cc-expiration"
-                placeholder="MM/AA"
-                pattern="[0-9]{2}/[0-9]{2}"
-                required
-              />
-              <div class="invalid-feedback">A validade é obrigatória</div>
-            </div>
-            <div class="col-md-3">
-              <label for="cc-cvv" class="form-label">CVV</label>
-              <input
-                type="text"
-                class="form-control"
-                id="cc-cvv"
-                pattern="[0-9]{3}"
-                required
-              />
-              <div class="invalid-feedback">
-                Código de segurança obrigatório
-              </div>
+              <label class="form-check-label" for="Espécie">Espécie</label>
             </div>
           </div>
           <hr class="my-4" />
@@ -390,17 +316,21 @@
           <li class="lista-item-footer">
             <a href="">SOBRE A PASSEIOS MARÍTIMOS</a>
           </li>
-          <li class="lista-item-footer"><a href="./lanchas.html">ESCOLHA A SUA LANCHA</a></li>
+          <li class="lista-item-footer">
+            <a href="./lanchas.html">ESCOLHA A SUA LANCHA</a>
+          </li>
           <li class="lista-item-footer"><a href="">CONTATO</a></li>
         </ul>
         <ul class="encontrar-footer">
           <h3 class="encontrar-titulo-footer">ONDE NOS ENCONTRAR</h3>
           <li>
-            <p class="encontrar-item-footer"><a
+            <p class="encontrar-item-footer">
+              <a
                 href="https://www.google.com.br/maps/place/Casa+do+Jacar%C3%A9/@-7.0347802,-34.8576823,17z/data=!3m1!4b1!4m6!3m5!1s0x7acde18e4a20717:0xc7cdcab89b285fd4!8m2!3d-7.0347855!4d-34.8551127!16s%2Fg%2F11c5spv6cc?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 >Casa do Jacaré, Cabedelo</a
-              ></p>
+              >
+            </p>
           </li>
           <li>
             <p class="encontrar-item-footer">
@@ -421,5 +351,6 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/carrinho.js"></script>
   </body>
 </html>
