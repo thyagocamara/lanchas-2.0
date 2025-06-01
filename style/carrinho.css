@@ -1,0 +1,178 @@
+body {
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-logo {
+    height: 4rem;
+    width: auto;
+}
+
+.nav-item {
+  padding-bottom: 0.2rem;
+}
+
+.footer {
+  background-color: hsl(0, 0%, 0%);
+  padding: 20px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px 0 60px;
+}
+
+.direitos-footer {
+  color: hsl(0, 0%, 44%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin: 0;
+  background: #000;
+}
+
+.lista-footer {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.lista-item-footer {
+  color: hsl(0, 0%, 67%);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 20px;
+}
+
+.lista-item-footer :hover {
+  color: hsl(0, 0%, 87%);
+}
+
+.lista-item-footer a {
+  text-decoration: none;
+  color: hsl(0, 0%, 67%);
+  list-style: none;
+}
+
+.encontrar-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.encontrar-titulo-footer {
+  color: hsl(0, 0%, 100%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  /* 178.571% */
+  letter-spacing: 1.1px;
+}
+
+.encontrar-item-footer {
+  color: hsl(0, 0%, 100%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+
+.imagem-footer {
+  align-self: flex-end;
+  max-width: 180px;
+}
+
+.direitos-footer {
+  color: hsl(0, 0%, 44%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+}
+
+@media (max-width: 1470px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 30px 10px 0 10px;
+  }
+  .lista-footer,
+  .encontrar-footer {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  .imagem-footer {
+    margin-top: 20px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    padding: 20px 0 0 0;
+  }
+  .direitos-footer {
+    font-size: 12px;
+    padding: 10px 0 5px 0;
+  }
+}
+@media (max-width: 1024px) {
+  
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 30px 10px 0 10px;
+  }
+  .lista-footer,
+  .encontrar-footer {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  .imagem-footer {
+    margin-top: 20px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-main {
+    padding: 20px 0 0 0;
+  }
+  .direitos-footer {
+    font-size: 12px;
+    padding: 10px 0 5px 0;
+  }
+}
