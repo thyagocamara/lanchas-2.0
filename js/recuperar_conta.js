@@ -1,14 +1,25 @@
-const btn = document.querySelector(".btn");
-let countClick = 0;
+let count = 0;
 
-btn.addEventListener("click", (e) => {
-    e.preventDefault()
-    countClick ++;
+document
+  .getElementById("loginForm")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
 
-    if (countClick === 1) {
-        btn.textContent = 'Voltar'
+    const email = document.getElementById("email").value.trim();
+    const pass = document.getElementById("senha");
+
+    const validEmail = "admin@gmail.com";
+    const validPass = "123456";
+
+    if (email === validEmail) {
+      pass.textContent = `Senha: ${validPass}`;
+      pass.style.color = "green";
+      count += 1;
+      if (count === 2) {
+        window.location.href = "../public/login.html";
+      }
+    } else {
+      pass.textContent = "Usuário ou senha incorretos.";
+      pass.style.color = "red";
     }
-    if (countClick === 2) {
-        window.location.href = "../public/login.html"
-    }
-})
+  });

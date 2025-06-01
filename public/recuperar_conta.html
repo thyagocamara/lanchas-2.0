@@ -23,36 +23,46 @@
     />
   </head>
   <body>
-    <main class="form-signin formulario">
-      <form id="loginForm">
-        <h1 class="h4 mb-4 fw-normal">Nós vamos mostrar a senha para</h1>
-        <div class="form-floating mb-4">
-          <input
-            type="email"
-            class="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
+    <div class="tela-de-login">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source
+            src="../assets/videos/video_tela_recuperar_senha.mp4"
+            type="video/mp4"
           />
-          <label for="floatingInput">fake@gmail.com</label>
-        </div>
-        <button
-          class="btn w-100 py-2 mb-4"
-          type="submit"
-          data-bs-toggle="collapse"
-          data-bs-target="#senhaCollapse"
-          aria-expanded="false"
-          aria-controls="#senhaCollapse"
-        >
-          Mostrar senha
-        </button>
-        <div class="card collapse" id="senhaCollapse">
-          <div class="d-flex justify-content-center align-items-center py-1">
-            <p>Senha: 123456</p>
+        </video>
+      </div>
+      <div class="container-formulario">
+        <h1>Recupere sua conta</h1>
+        <form id="loginForm">
+          <div class="grupo-de-input">
+            <label for="email">Endereço de Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Digite seu email"
+              required
+            />
           </div>
-        </div>
-        <p class="mt-5 mb-3 text-body-secondary">© 2025</p>
-      </form>
-    </main>
+          <button
+            id="loginForm"
+            type="submit"
+            data-bs-toggle="collapse"
+            data-bs-target="#senhaCollapse"
+            aria-expanded="false"
+            aria-controls="#senhaCollapse"
+          >
+            Mostrar senha
+          </button>
+          <div class="card collapse" id="senhaCollapse">
+            <div class="d-flex justify-content-center align-items-center py-1">
+              <p id="senha"></p>
+            </div>
+          </div>
+          <p class="mt-5 mb-3 text-body-secondary">© 2025 Passeios Marítimos - Todos os direitos reservados.</p>
+        </form>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

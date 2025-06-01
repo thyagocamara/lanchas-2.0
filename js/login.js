@@ -1,8 +1,8 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+document.getElementById("loginForm").addEventListener("click", function(event) {
       event.preventDefault();
 
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
+      const username = document.getElementById("email").value.trim();
+      const password = document.getElementById("senha").value.trim();
       const message = document.getElementById("message");
 
       const validUser = "admin";

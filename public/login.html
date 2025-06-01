@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Login do site de locação de lanchas">
-  <meta name="author" content="OceanCoders">
-  <title>Login</title>
-  <link rel="stylesheet" href="../style/login.css" />
-  <link rel="shortcut icon" href="../assets/images/favicon_logo_azul_2.png" type="image/x-icon">
-</head>
-<body>
-  <div class="login-box">
-    <img src="../assets/images/logo_azul.png" alt="Logo" class="logo">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Login do site de locação de lanchas" />
+    <meta name="author" content="OceanCoders" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/login.css" />
+    <link rel="shortcut icon" href="../assets/images/favicon_logo_azul_2.png" type="image/x-icon">
+  </head>
 
-    <form id="loginForm">
-      <input type="text" id="username" placeholder="Usuário" required>
-      <input type="password" id="password" placeholder="Senha" required>
-      <div class="options">
-        <label><input type="checkbox"> Manter conectado</label>
-        <a href="./recuperar_conta.html">esqueceu a senha?</a>
+  <body>
+    <div class="tela-de-login">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source
+            src="../assets/videos/video_tela_login.mov"
+            type="video/mp4"
+          />
+        </video>
       </div>
-      <button type="submit">LOGIN</button>
-    </form>
-
-    <p id="message"></p>
-
-  <script src="../js/login.js"></script>
-</body>
+      <div class="container-formulario">
+        <h1>Bem Vindo</h1>
+        <form id="loginForm">
+          <div class="grupo-de-input">
+            <label for="email">Endereço de Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+          <div class="grupo-de-input">
+            <label for="senha">Senha</label>
+            <input
+              id="senha"
+              type="password"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+          <p id="message"></p>
+          <button type="submit">Login</button>
+        </form>
+        <p><a href="./recuperar_conta.html">Esqueceu a senha?</a></p>
+          <p class="mt-5 mb-3 text-body-secondary">© 2025 Passeios Marítimos - Todos os direitos reservados.</p>
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
 </html>
