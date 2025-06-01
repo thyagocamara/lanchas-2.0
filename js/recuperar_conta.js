@@ -1,25 +1,27 @@
-let count = 0;
+let clicks = 0;
 
 document
-  .getElementById("loginForm")
-  .addEventListener("click", function (event) {
+  .getElementById("formularioLogin")
+  .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const email = document.getElementById("email").value.trim();
-    const pass = document.getElementById("senha");
+    const email = document.querySelector("#email").value.trim();
+    const senha = document.querySelector("#senha");
+    const textoButao = document.querySelector(".butao");
 
-    const validEmail = "admin@gmail.com";
-    const validPass = "123456";
+    const emailValido = "oceancoders@gmail.com";
+    const senhaValida = "123456";
 
-    if (email === validEmail) {
-      pass.textContent = `Senha: ${validPass}`;
-      pass.style.color = "green";
-      count += 1;
-      if (count === 2) {
+    if (email === emailValido) {
+      senha.textContent = `Senha: ${senhaValida}`;
+      senha.style.color = "green";
+      clicks += 1;
+      textoButao.textContent = "Voltar"
+      if (clicks === 2) {
         window.location.href = "../public/login.html";
       }
     } else {
-      pass.textContent = "Usuário ou senha incorretos.";
-      pass.style.color = "red";
+      senha.textContent = "Usuário ou senha incorretos.";
+      senha.style.color = "red";
     }
   });
