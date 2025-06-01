@@ -21,45 +21,143 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <ul class="lista-nav">
-        <li class="lista-li">
-          <a href="#"><img src="./assets/images/Button → SVG.svg" alt="" /></a>
-        </li>
-        <li>
-          <a class="link-sem-underline" href="">
-            <p class="escolha">Escolha sua lancha</p>
-          </a>
-        </li>
-      </ul>
-
-      <a href="./public/login.html"
-        ><img
-          class="logo"
-          src="./assets/images/logo.png"
-          alt="Logo da empresa passeios marítimos"
-          title="Logo"
-      /></a>
-
-      <div class="nacionalidades">
-        <img
-          src="./assets/images/bandeira_brasil.png"
-          alt="Bandeira do Brasil"
-          title="Brasil"
-        />
-        <img
-          src="./assets/images/badeira_estados_unidos.png"
-          alt="Bandeira dos Estados Unidos"
-          title="Estados Unidos"
-        />
-        <img
-          src="./assets/images/bandeira_espanha.png"
-          alt="Bandeira da Espanha"
-          title="Espanha"
-        />
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            class="navbar-logo"
+            src="../assets/images/logo_azul.png"
+            alt="logo"
+          />Passeios Marítimos</a
+        >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./public/carrinho.html">Carrinho</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Escolha sua lancha
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./public/login.html">Inscreva-se</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#fullScreenModal"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="modal fade"
+          id="fullScreenModal"
+          tabindex="-1"
+          aria-labelledby="fullScreenModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="fullScreenModalLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="../index.html"
+                      >Início</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./public/carrinho.html">Carrinho</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Escolha sua lancha
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./public/login.html"
+                      >Inscreva-se</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Buscar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
-
     <main class="main">
       <div class="conteudo-flex">
         <div class="coluna-lancha">
@@ -102,7 +200,7 @@
     </main>
     <section class="section-perguntas py-5">
       <h1 class="section-titulo">Perguntas Frequentes</h1>
-      <div>
+      <div class="container">
         <div class="pergunta">
           <p class="pergunta-pergunta">
             <a
@@ -111,11 +209,10 @@
               role="button"
               aria-expanded="false"
               aria-controls="#collapsePergunta1"
-              >Quais as vantagens por alugar uma lancha da Passeios
-              Marítimos?</a
+              >Qual a capacidade das lanchas de vocês?</a
             >
           </p>
-          <div class="collapse" id="collapsePergunta1" style="max-width: 628px">
+          <div class="collapse" id="collapsePergunta1">
             <div class="resposta-pergunta">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
               illum consequatur inventore distinctio ullam incidunt pariatur,
@@ -130,10 +227,10 @@
               role="button"
               aria-expanded="false"
               aria-controls="#collapsePergunta2"
-              >Como alugar uma lancha?</a
+              >O que é incluso na locação?</a
             >
           </p>
-          <div class="collapse" id="collapsePergunta2" style="max-width: 628px">
+          <div class="collapse" id="collapsePergunta2">
             <div class="resposta-pergunta">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Architecto omnis provident excepturi quas magnam eius deleniti
@@ -148,10 +245,46 @@
               role="button"
               aria-expanded="false"
               aria-controls="#collapsePergunta3"
-              >O que avaliar para encontrar a lancha ideal?</a
+              >Quais são as formas de pagamento?</a
             >
           </p>
-          <div class="collapse" id="collapsePergunta3" style="max-width: 628px">
+          <div class="collapse" id="collapsePergunta3">
+            <div class="resposta-pergunta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              fuga quas eos pariatur eaque ipsa odit aspernatur autem? Saepe
+              modi repellendus nesciunt hic tenetur, nemo in odio dicta labore
+              cupiditate.
+            </div>
+          </div>
+          <p class="pergunta-pergunta">
+            <a
+              data-bs-toggle="collapse"
+              href="#collapsePergunta4"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#collapsePergunta4"
+              >Criança paga?</a
+            >
+          </p>
+          <div class="collapse" id="collapsePergunta4">
+            <div class="resposta-pergunta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              fuga quas eos pariatur eaque ipsa odit aspernatur autem? Saepe
+              modi repellendus nesciunt hic tenetur, nemo in odio dicta labore
+              cupiditate.
+            </div>
+          </div>
+          <p class="pergunta-pergunta">
+            <a
+              data-bs-toggle="collapse"
+              href="#collapsePergunta5"
+              role="button"
+              aria-expanded="false"
+              aria-controls="#collapsePergunta5"
+              >Como faço para agendar?</a
+            >
+          </p>
+          <div class="collapse" id="collapsePergunta5">
             <div class="resposta-pergunta">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
               fuga quas eos pariatur eaque ipsa odit aspernatur autem? Saepe
@@ -175,11 +308,19 @@
         <ul class="encontrar-footer">
           <h3 class="encontrar-titulo-footer">ONDE NOS ENCONTRAR</h3>
           <li>
-            <p class="encontrar-item-footer">Casa do Jacaré, Cabedelo</p>
+            <p class="encontrar-item-footer">
+              <a
+                href="https://www.google.com.br/maps/place/Casa+do+Jacar%C3%A9/@-7.0347802,-34.8576823,17z/data=!3m1!4b1!4m6!3m5!1s0x7acde18e4a20717:0xc7cdcab89b285fd4!8m2!3d-7.0347855!4d-34.8551127!16s%2Fg%2F11c5spv6cc?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                >Casa do Jacaré, Cabedelo</a
+              >
+            </p>
           </li>
           <li>
             <p class="encontrar-item-footer">
-              contato@passeiosmaritimos.com.br
+              <a href="mailto:contato@passeiosmaritimos.com.br"
+                >contato@passeiosmaritimos.com.br</a
+              >
             </p>
           </li>
         </ul>

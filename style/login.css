@@ -1,94 +1,112 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(300deg, #43bec6, #0197a6, #04718e);
-  background-size: 180% 180%;
-  animation: gradient-animation 12s ease infinite;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.tela-de-login {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
 }
 
-
-.login-box {
-  width: 300px;
-  padding: 40px;
-  background: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  border-radius: 8px;
+.video-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.login-box h2 {
-  margin-bottom: 15px;
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.logo {
-  width: 120px;
-  height: auto;
-  margin-bottom: 10px;
+.container-formulario {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.1);
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+h1 {
+    padding: 5px;
+    margin-bottom: 1.5rem;
 }
 
-.options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  font-size: 12px;
+h1, h2 {
+    color: hsl(0, 0%, 20%);
 }
 
-.options input {
-  margin-right: 5px;
+.grupo-de-input {
+    margin-bottom: 15px;
+    width: 100%;
 }
 
-.options label{
-  color: hsla(0, 0%, 10%, 0.800);
+.grupo-de-input label {
+    display: block;
+    padding: 5px;
+    margin-bottom: 0.8rem;
+    color: hsl(0, 0%, 20%);
 }
 
-.options a {
-  text-decoration: none;
-  color: hsla(0, 0%, 10%, 0.800);
+.grupo-de-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid hsl(0, 0%, 93%);
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.grupo-de-input input:focus {
+    border-color: hsl(210, 96%, 46%);
+    outline: none;
 }
 
-.login-box button {
-  width: 100%;
-  padding: 10px;
-  background: hsl(213, 100%, 55%);
-  border: none;
-  color: hsl(210, 40%, 98%);
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
+button {
+    background-color: hsl(210, 96%, 46%);
+    color: hsl(0, 0%, 100%);
+    padding: 12px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
-.login-box button:hover {
-  color: hsl(210, 40%, 98%);
-  background: hsl(213, 100%, 45%);
+button:hover {
+    background-color: hsl(211, 96%, 36%);
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+p > a {
+    text-decoration: none;
+    color: hsl(210, 96%, 46%);
+}
+
+p:hover > a {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .tela-de-login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container, .container-formulario {
+        width: 100%;
+        height: 100vh;
+    }
 }
