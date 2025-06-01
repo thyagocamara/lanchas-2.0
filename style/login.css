@@ -32,8 +32,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsla(0, 0%, 100%, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.1);
 }
 
 h1 {
@@ -53,7 +51,7 @@ h1, h2 {
 .grupo-de-input label {
     display: block;
     padding: 5px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
     color: hsl(0, 0%, 20%);
 }
 

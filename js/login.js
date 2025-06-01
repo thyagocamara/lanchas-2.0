@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("click", function(event) {
       const password = document.getElementById("senha").value.trim();
       const message = document.getElementById("message");
 
-      const validUser = "admin";
+      const validUser = "admin@gmail.com";
       const validPass = "123456";
 
       if (username === validUser && password === validPass) {
