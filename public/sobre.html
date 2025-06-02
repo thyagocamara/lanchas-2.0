@@ -117,9 +117,7 @@
                       >Início</a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./sobre.html">Sobre</a>
-                  </li>
+
                   <li class="nav-item">
                     <a class="nav-link" href="./carrinho.html">Carrinho</a>
                   </li>
@@ -184,58 +182,44 @@
         <h2 class="my-3">Roteiro</h2>
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Header</h4>
-            <h5>Logo e Nome do Site</h5>
-            <p>
-              Exibe o logotipo da empresa ao lado do título "Passeios
-              Marítimos", funcionando como um link para a página inicial.
-            </p>
+            <h3 class="card-title">Página: Início (index.html)</h3>
 
-            <h5>Menu de Navegação</h5>
-            <p>Inclui os seguintes itens:</p>
+            <h4>Cabeçalho (Header)</h4>
             <ul>
-              <li>Início</li>
-              <li>Sobre</li>
-              <li>Carrinho</li>
-              <li>Catálogo</li>
-              <li>Dropdown "Escolha sua lancha" com opções adicionais</li>
-              <li>Inscreva-se</li>
+              <li>
+                Logo + título "Passeios Marítimos" (link para página inicial)
+              </li>
+              <li>
+                Menu de navegação: Início, Sobre, Carrinho, Catálogo, Dropdown
+                "Escolha sua lancha", Inscreva-se
+              </li>
+              <li>Campo de busca com botão "Buscar"</li>
+              <li>
+                Menu responsivo (hambúrguer) com modal fullscreen nos
+                dispositivos móveis
+              </li>
             </ul>
 
-            <h5>Barra de Busca</h5>
-            <p>
-              Campo de pesquisa com botão "Buscar" para facilitar a navegação.
-            </p>
-
-            <h5>Menu</h5>
-            <p>
-              Para dispositivos móveis, um botão de menu (hambúrguer) abre um
-              modal de tela cheia com os mesmos itens de navegação.
-            </p>
-
-            <h4 class="card-title">Main</h4>
-
+            <h4>Seção Principal (Main)</h4>
             <h5>Breadcrumb</h5>
-            <p>Indica a navegação atual: "Passeios Marítimos &gt; Lanchas".</p>
+            <p>Mostra: "Passeios Marítimos > Lanchas"</p>
 
             <h5>Título e Chamada para Ação</h5>
-            <p>Destaca o texto:</p>
             <blockquote>LANCHAS: ESCOLHA O SEU MODELO</blockquote>
-            <p>Link "Reservar" leva à página de catálogo.</p>
+            <p>Botão/link "Reservar" direciona para o Catálogo</p>
 
             <h5>Vídeos Promocionais</h5>
             <ul>
-              <li>Vídeo com clientes em passeios</li>
-              <li>Vídeo destacando as lanchas disponíveis</li>
+              <li>Clientes curtindo os passeios</li>
+              <li>Exibição de modelos de lanchas</li>
             </ul>
 
-            <h5>Mensagem</h5>
+            <h5>Mensagem de Impacto</h5>
             <blockquote>
               SUA EXPERIÊNCIA INESQUECÍVEL COMEÇA AQUI - ENCONTRE A LANCHA IDEAL
             </blockquote>
 
-            <h4 class="card-title">FAQ</h4>
-
+            <h4>Seção de Perguntas Frequentes (FAQ)</h4>
             <ul>
               <li>
                 <strong>Qual a capacidade das lanchas de vocês?</strong>
@@ -261,34 +245,106 @@
               </li>
             </ul>
 
-            <h4 class="card-title">Footer</h4>
-
-            <h5>Links Rápidos</h5>
-            <ul>
-              <li>Início</li>
-              <li>Sobre a Passeios Marítimos</li>
-              <li>Escolha a sua lancha</li>
-              <li>Contato</li>
-            </ul>
-
-            <h5>Informações de Contato</h5>
+            <h4>Rodapé (Footer)</h4>
             <ul>
               <li>
-                <strong>Localização:</strong> Casa do Jacaré, Cabedelo (<a
-                  href="https://maps.google.com"
-                  >Ver no mapa</a
-                >)
+                Links rápidos: Início, Sobre a Passeios Marítimos, Escolha a sua
+                lancha, Contato
               </li>
               <li>
-                <strong>Email:</strong>
+                Localização: Casa do Jacaré, Cabedelo (link para o Google Maps)
+              </li>
+              <li>
+                Email:
                 <a href="mailto:contato@passeiosmaritimos.com.br"
                   >contato@passeiosmaritimos.com.br</a
                 >
               </li>
+              <li>
+                Direitos Autorais: © 2025 Passeios Marítimos - Todos os direitos
+                reservados.
+              </li>
             </ul>
 
-            <h5>Direitos Autorais</h5>
-            <p>© 2025 Passeios Marítimos - Todos os direitos reservados.</p>
+            <hr />
+
+            <!-- Página: CARRINHO -->
+            <h3 class="card-title">Página: Carrinho (carrinho.html)</h3>
+            <p>Exibe os itens adicionados pelo usuário para locação.</p>
+
+            <h5>Detalhes dos Itens</h5>
+            <ul>
+              <li>Imagem da lancha</li>
+              <li>Nome da embarcação</li>
+              <li>Preço da locação</li>
+              <li>Botão para remover item</li>
+            </ul>
+
+            <h5>Resumo do Pedido</h5>
+            <p>Apresenta o valor total e botões para:</p>
+            <ul>
+              <li>Voltar para o catálogo</li>
+              <li>Finalizar pedido</li>
+            </ul>
+
+            <hr />
+
+            <!-- Página: LANCHAS -->
+            <h3 class="card-title">Página: Lanchas (lanchas.html)</h3>
+            <p>Catálogo de lanchas disponíveis para locação.</p>
+
+            <h5>Cartões de Lanchas</h5>
+            <p>Cada card inclui:</p>
+            <ul>
+              <li>Imagem da lancha</li>
+              <li>Nome e modelo</li>
+              <li>Capacidade de pessoas</li>
+              <li>Preço da diária</li>
+              <li>Botão "Adicionar ao Carrinho"</li>
+            </ul>
+
+            <h5>Filtro/Busca</h5>
+            <p>Campo de busca para localizar modelos específicos.</p>
+
+            <hr />
+
+            <!-- Página: LOGIN -->
+            <h3 class="card-title">Página: Login (login.html)</h3>
+            <p>Permite que usuários acessem sua conta no sistema.</p>
+
+            <h5>Campos do Formulário</h5>
+            <ul>
+              <li>Email</li>
+              <li>Senha</li>
+            </ul>
+
+            <h5>Ações e Links</h5>
+            <ul>
+              <li>Botão "Entrar"</li>
+              <li>Link "Esqueci minha senha"</li>
+              <li>Link para criar nova conta</li>
+            </ul>
+
+            <hr />
+
+            <!-- Página: RECUPERAR CONTA -->
+            <h3 class="card-title">
+              Página: Recuperar Conta (recuperar_conta.html)
+            </h3>
+            <p>
+              Permite que o usuário redefina sua senha em caso de esquecimento.
+            </p>
+
+            <h5>Campos do Formulário</h5>
+            <ul>
+              <li>Endereço de e-mail</li>
+            </ul>
+
+            <h5>Ações</h5>
+            <ul>
+              <li>Botão "Recuperar senha"</li>
+              <li>Link para voltar ao login</li>
+            </ul>
           </div>
         </div>
       </div>
