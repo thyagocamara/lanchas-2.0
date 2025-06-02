@@ -1,0 +1,274 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border-bottom: 1px solid hsla(0, 0%, 90%, 0.849);
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-logo {
+  height: 4rem;
+  width: auto;
+}
+
+.nav-item {
+  padding-bottom: 0.2rem;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: hsl(0, 0%, 0%);
+  padding: 20px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px 0 60px;
+}
+
+.direitos-footer {
+  color: hsl(0, 0%, 44%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin: 0;
+  background: #000;
+}
+
+.lista-footer {
+  padding: 50px;
+  margin: 0;
+}
+
+.lista-item-footer {
+  color: hsl(0, 0%, 67%);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 20px;
+}
+
+.lista-item-footer :hover {
+  color: hsl(0, 0%, 87%);
+}
+
+.lista-item-footer a {
+  text-decoration: none;
+  color: hsl(0, 0%, 67%);
+  list-style: none;
+}
+
+.encontrar-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.encontrar-titulo-footer {
+  color: hsl(0, 0%, 100%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  /* 178.571% */
+  letter-spacing: 1.1px;
+}
+
+.encontrar-item-footer {
+  color: hsl(0, 0%, 100%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+
+.encontrar-item-footer > a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.encontrar-item-footer > a:hover {
+  text-decoration: underline;
+}
+
+.imagem-footer {
+  align-self: flex-end;
+  max-width: 180px;
+}
+
+.direitos-footer {
+  color: hsl(0, 0%, 44%);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+}
+
+@media (max-width: 1470px) {
+  .conteudo-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-left: 0;
+  }
+  .primeiro-video,
+  .segundo-video {
+    width: 90vw;
+    height: auto;
+    max-width: 500px;
+  }
+  .main {
+    margin: 40px 0;
+  }
+  .h1-passeios,
+  .experiencia-texto {
+    font-size: 36px;
+    text-align: center;
+  }
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 30px 10px 0 10px;
+  }
+  .lista-footer,
+  .encontrar-footer {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  .imagem-footer {
+    margin-top: 20px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+  }
+  .nacionalidades {
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .main {
+    margin: 20px 0;
+  }
+  .h1-passeios,
+  .experiencia-texto {
+    font-size: 24px;
+  }
+  .section-titulo {
+    font-size: 24px;
+  }
+  .footer-main {
+    padding: 20px 0 0 0;
+  }
+  .direitos-footer {
+    font-size: 12px;
+    padding: 10px 0 5px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .conteudo-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-left: 0;
+  }
+  .primeiro-video,
+  .segundo-video {
+    width: 90vw;
+    height: auto;
+    max-width: 500px;
+  }
+  .main {
+    margin: 40px 0;
+  }
+  .h1-passeios,
+  .experiencia-texto {
+    font-size: 36px;
+    text-align: center;
+  }
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 30px 10px 0 10px;
+  }
+  .lista-footer,
+  .encontrar-footer {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  .imagem-footer {
+    margin-top: 20px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .logo,
+  .nacionalidades {
+    display: none;
+  }
+  .main {
+    margin: 20px 0;
+  }
+  .h1-passeios,
+  .experiencia-texto {
+    font-size: 24px;
+  }
+  .section-titulo {
+    font-size: 24px;
+  }
+  .footer-main {
+    padding: 20px 0 0 0;
+  }
+  .direitos-footer {
+    font-size: 12px;
+    padding: 10px 0 5px 0;
+  }
+}
