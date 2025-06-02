@@ -13,7 +13,7 @@
 
 ## Onde acessar o projeto?
 
-<a href="https://thyagocamara.github.io/passeios-maritimos/">Passeios Marítimos</a>
+<a href="https://thyagocamara.github.io/passeios-maritimos/" target="_blank">Passeios Marítimos</a>
 
 ## Tecnologias usadas
 <p>

@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!formularioCarrinho.checkValidity()) {
       event.preventDefault();
     }
+    else {
+      event.preventDefault();
+      window.location.href = "../index.html";
+    }
     formularioCarrinho.classList.add("was-validated");
   });
 });
