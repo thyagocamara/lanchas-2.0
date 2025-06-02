@@ -173,37 +173,56 @@
       </div>
     </nav>
     <main class="px-4 pt-4 pb-5">
+      <!-- Início da seção principal da página com padding nas laterais e nas partes superior e inferior -->
       <div class="col-md-7 col-lg-8" id="main">
+        <!-- Div que ocupa 7 colunas em telas médias e 8 em telas grandes -->
         <h4 class="mb-3">Endereço de Cobrança</h4>
+        <!-- Título da seção de endereço de cobrança -->
         <form class="needs-validation" id="formularioCarrinho" novalidate>
+          <!-- Início do formulário com validação necessária e sem validação padrão do HTML -->
           <div class="row g-3">
+            <!-- Início de uma linha com espaçamento entre colunas -->
             <div class="col-sm-6">
+              <!-- Coluna que ocupa metade da largura em telas pequenas e maiores -->
               <label for="nome" class="form-label">Nome</label>
+              <!-- Rótulo para o campo de nome -->
               <input type="text" class="form-control" id="nome" required />
+              <!-- Campo de entrada para o nome, obrigatório -->
               <div class="invalid-feedback">O nome é obrigatório.</div>
+              <!-- Mensagem de erro se o campo não for preenchido -->
             </div>
             <div class="col-sm-6">
+              <!-- Outra coluna que ocupa metade da largura -->
               <label for="sobrenome" class="form-label">Sobrenome</label>
+              <!-- Rótulo para o campo de sobrenome -->
               <input type="text" class="form-control" id="sobrenome" required />
+              <!-- Campo de entrada para o sobrenome, obrigatório -->
               <div class="invalid-feedback">O sobrenome é obrigatório.</div>
+              <!-- Mensagem de erro para sobrenome -->
             </div>
             <div class="col-12">
+              <!-- Coluna que ocupa toda a largura -->
               <label for="email" class="form-label"
                 >E-mail
                 <span class="text-body-secondary">(opcional)</span></label
               >
+              <!-- Rótulo para o campo de e-mail, com indicação de que é opcional -->
               <input
                 type="email"
                 class="form-control"
                 id="email"
                 placeholder="voce@exemplo.com"
               />
+              <!-- Campo de entrada para e-mail -->
               <div class="invalid-feedback">
                 Insira um e-mail válido para atualizações de envio.
               </div>
+              <!-- Mensagem de erro para e-mail inválido -->
             </div>
             <div class="col-12">
+              <!-- Outra coluna que ocupa toda a largura -->
               <label for="telefone" class="form-label">Telefone</label>
+              <!-- Rótulo para o campo de telefone -->
               <input
                 type="tel"
                 class="form-control"
@@ -212,57 +231,97 @@
                 pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
                 required
               />
+              <!-- Campo de entrada para telefone com padrão específico -->
               <div class="invalid-feedback">O telefone é obrigatório.</div>
+              <!-- Mensagem de erro para telefone -->
             </div>
             <hr class="my-4" />
+            <!-- Linha horizontal para separação de seções -->
             <h4 class="mb-3">Detalhes da Locação</h4>
+            <!-- Título da seção de detalhes da locação -->
             <div class="row g-1">
+              <!-- Início de uma nova linha com espaçamento menor -->
               <div class="col-12">
-                <label for="tipoDeEmbarcacao" class="form-label">Tipo de Lancha</label>
+                <!-- Coluna que ocupa toda a largura -->
+                <label for="tipoDeEmbarcacao" class="form-label"
+                  >Tipo de Lancha</label
+                >
+                <!-- Rótulo para o campo de tipo de embarcação -->
                 <select class="form-select" id="tipoDeEmbarcacao" required>
+                  <!-- Campo de seleção para tipo de lancha, obrigatório -->
                   <option value="">Escolha...</option>
+                  <!-- Opção padrão -->
                   <option>Lancha de Passeio</option>
+                  <!-- Opção de lancha de passeio -->
                   <option>Lancha de Pesca</option>
+                  <!-- Opção de lancha de pesca -->
                   <option>Lancha de Velocidade</option>
+                  <!-- Opção de lancha de velocidade -->
                 </select>
                 <div class="invalid-feedback">Selecione um tipo de lancha.</div>
+                <!-- Mensagem de erro se nenhuma opção for selecionada -->
               </div>
             </div>
             <div class="col-md-6">
-              <label for="dataDeInicio" class="form-label">Data de Início</label>
+              <!-- Coluna que ocupa metade da largura em telas médias e maiores -->
+              <label for="dataDeInicio" class="form-label"
+                >Data de Início</label
+              >
+              <!-- Rótulo para o campo de data de início -->
               <input
                 type="date"
                 class="form-control"
                 id="dataDeInicio"
                 required
               />
+              <!-- Campo de entrada para a data de início, obrigatório -->
               <div class="invalid-feedback">
                 A data de início é obrigatória.
               </div>
+              <!-- Mensagem de erro se a data de início não for preenchida -->
             </div>
             <div class="col-md-6">
-              <label for="dataDeTermino" class="form-label">Data de Término</label>
-              <input type="date" class="form-control" id="dataDeTermino" required />
+              <!-- Outra coluna que ocupa metade da largura em telas médias e maiores -->
+              <label for="dataDeTermino" class="form-label"
+                >Data de Término</label
+              >
+              <!-- Rótulo para o campo de data de término -->
+              <input
+                type="date"
+                class="form-control"
+                id="dataDeTermino"
+                required
+              />
+              <!-- Campo de entrada para a data de término, obrigatório -->
               <div class="invalid-feedback">
                 A data de término é obrigatória.
               </div>
+              <!-- Mensagem de erro se a data de término não for preenchida -->
             </div>
             <div class="col-12">
-              <label for="solicitaoAdicional" class="form-label"
-                >Solicitações Adicionais <span class="text-body-secondary">(opcional)</span></label
+              <!-- Coluna que ocupa toda a largura -->
+              <label for="solicitacaoAdicional" class="form-label"
+                >Solicitações Adicionais
+                <span class="text-body-secondary">(opcional)</span></label
               >
+              <!-- Rótulo para o campo de solicitações adicionais, com indicação de que é opcional -->
               <textarea
                 class="form-control"
                 id="solicitacaoAdicional"
                 rows="3"
                 placeholder="Exemplo: Equipamentos, Serviços, etc."
               ></textarea>
+              <!-- Campo de texto para solicitações adicionais -->
             </div>
           </div>
           <hr class="my-4" />
+          <!-- Linha horizontal para separação de seções -->
           <h4 class="mb-3">Pagamento</h4>
+          <!-- Título da seção de pagamento -->
           <div class="my-3">
+            <!-- Div com margem vertical -->
             <div class="form-check">
+              <!-- Início do grupo de opções de pagamento -->
               <input
                 id="credit"
                 name="metodoDePagamento"
@@ -271,9 +330,12 @@
                 checked
                 required
               />
+              <!-- Opção de pagamento por Pix, selecionada por padrão e obrigatória -->
               <label class="form-check-label" for="credit">Pix</label>
+              <!-- Rótulo para a opção de pagamento por Pix -->
             </div>
             <div class="form-check">
+              <!-- Outra opção de pagamento -->
               <input
                 id="debit"
                 name="metodoDePagamento"
@@ -281,9 +343,12 @@
                 class="form-check-input"
                 required
               />
+              <!-- Opção de pagamento por Transferência, obrigatória -->
               <label class="form-check-label" for="debit">Transferência</label>
+              <!-- Rótulo para a opção de pagamento por Transferência -->
             </div>
             <div class="form-check">
+              <!-- Outra opção de pagamento -->
               <input
                 id="Espécie"
                 name="metodoDePagamento"
@@ -291,16 +356,23 @@
                 class="form-check-input"
                 required
               />
+              <!-- Opção de pagamento em Espécie, obrigatória -->
               <label class="form-check-label" for="Espécie">Espécie</label>
+              <!-- Rótulo para a opção de pagamento em Espécie -->
             </div>
           </div>
           <hr class="my-4" />
+          <!-- Linha horizontal para separação de seções -->
           <button class="w-100 btn btn-primary btn-lg" type="submit">
+            <!-- Botão para finalizar o pedido, ocupando toda a largura -->
             Finalizar pedido
           </button>
         </form>
+        <!-- Fim do formulário -->
       </div>
+      <!-- Fim da div principal -->
     </main>
+    <!-- Fim da seção principal -->
 
     <footer class="footer">
       <div class="footer-main">
@@ -312,7 +384,13 @@
           <li class="lista-item-footer">
             <a href="./lanchas.html">ESCOLHA A SUA LANCHA</a>
           </li>
-          <li class="lista-item-footer"><a href="https://api.whatsapp.com/send/?phone=5583996307840&text&type=phone_number&app_absent=0">CONTATO</a></li>
+          <li class="lista-item-footer">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5583996307840&text&type=phone_number&app_absent=0"
+              target="_blank"
+              >CONTATO</a
+            >
+          </li>
         </ul>
         <ul class="encontrar-footer">
           <h3 class="encontrar-titulo-footer">ONDE NOS ENCONTRAR</h3>

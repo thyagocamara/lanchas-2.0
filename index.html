@@ -21,32 +21,56 @@
   </head>
 
   <body>
+    <!-- Início navbar -->
     <nav class="navbar navbar-expand-lg">
+      <!-- Início da barra de navegação, que se expande em telas grandes -->
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img
+        <!-- Container fluido para manter o conteúdo alinhado -->
+        <!-- Logotipo + nome do site como link para a página inicial -->
+        <a class="navbar-brand" href="./index.html">
+          <!-- Link para a página inicial -->
+          <img
             class="navbar-logo"
             src="./assets/images/logo_azul.png"
             alt="logo"
-          />Passeios Marítimos</a
-        >
+          />
+          Passeios Marítimos
+          <!-- Imagem do logotipo -->
+          <!-- Nome do site -->
+        </a>
+        <!-- Container que será colapsado em telas pequenas -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Div que contém os itens da navbar, colapsável em telas pequenas -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Lista de navegação -->
+            <!-- Link para a página inicial -->
             <li class="nav-item">
+              <!-- Item da lista -->
               <a class="nav-link active" aria-current="page" href="./index.html"
                 >Início</a
               >
+              <!-- Link para a página inicial, com classe 'active' para indicar que está selecionado -->
             </li>
+            <!-- Link para a página "Sobre" -->
             <li class="nav-item">
+              <!-- Outro item da lista -->
               <a class="nav-link" href="./public/sobre.html">Sobre</a>
+              <!-- Link para a página "Sobre" -->
             </li>
+            <!-- Link para a página do carrinho -->
             <li class="nav-item">
+              <!-- Outro item da lista -->
               <a class="nav-link" href="./public/carrinho.html">Carrinho</a>
+              <!-- Link para a página do carrinho -->
             </li>
+            <!-- Link para a página de catálogo de lanchas -->
             <li class="nav-item">
+              <!-- Outro item da lista -->
               <a class="nav-link" href="./public/lanchas.html">Catálogo</a>
+              <!-- Link para a página do catálogo de lanchas -->
             </li>
             <li class="nav-item dropdown" style="display: none">
+              <!-- Item de lista para um dropdown, inicialmente oculto -->
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -54,44 +78,60 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
+                <!-- Link que ativa o dropdown -->
                 Escolha sua lancha
               </a>
               <ul class="dropdown-menu">
+                <!-- Menu suspenso -->
                 <li>
                   <a class="dropdown-item" href="./public/lanchas.html"
                     >Lanchas</a
                   >
+                  <!-- Link para a página de lanchas -->
                 </li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                <!-- Outro item do dropdown -->
                 <li><hr class="dropdown-divider" /></li>
+                <!-- Divisor no dropdown -->
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
+                  <!-- Outro item do dropdown -->
                 </li>
               </ul>
             </li>
+            <!-- Link para a página de login (cadastro) -->
             <li class="nav-item">
+              <!-- Outro item da lista -->
               <a class="nav-link" href="./public/login.html">Inscreva-se</a>
+              <!-- Link para a página de inscrição -->
             </li>
           </ul>
+          <!-- Campo de busca com botão "Buscar" -->
           <form class="d-flex" role="search">
+            <!-- Formulário de busca -->
             <input
               class="form-control me-2"
               type="search"
               placeholder="Buscar"
               aria-label="Search"
             />
+            <!-- Campo de entrada para busca -->
             <button class="btn btn-outline-success" type="submit">
               Buscar
             </button>
+            <!-- Botão para enviar a busca -->
           </form>
         </div>
+        <!-- Botão de hambúrguer (visível apenas em telas pequenas) que abre o menu fullscreen -->
         <button
           class="navbar-toggler d-lg-none"
           type="button"
           data-bs-toggle="modal"
           data-bs-target="#fullScreenModal"
         >
+          <!-- Botão que ativa o modal em telas pequenas -->
           <span class="navbar-toggler-icon"></span>
+          <!-- Ícone do botão de hambúrguer -->
         </button>
         <div
           class="modal fade"
@@ -100,43 +140,60 @@
           aria-labelledby="fullScreenModalLabel"
           aria-hidden="true"
         >
+          <!-- Modal que contém o menu em tela cheia -->
           <div class="modal-dialog modal-fullscreen">
+            <!-- Diálogo do modal em tela cheia -->
             <div class="modal-content">
+              <!-- Conteúdo do modal -->
+              <!-- Cabeçalho do modal (título + botão de fechar) -->
               <div class="modal-header">
+                <!-- Cabeçalho do modal -->
                 <h5 class="modal-title" id="fullScreenModalLabel">Menu</h5>
+                <!-- Título do modal -->
                 <button
                   type="button"
                   class="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
+                <!-- Botão para fechar o modal -->
               </div>
+              <!-- Corpo do modal contendo os mesmos links de navegação -->
               <div class="modal-body">
+                <!-- Corpo do modal -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- Lista de navegação dentro do modal -->
                   <li class="nav-item">
+                    <!-- Item da lista -->
                     <a
                       class="nav-link active"
                       aria-current="page"
                       href="./index.html"
                       >Início</a
                     >
+                    <!-- Link para a página inicial, com classe 'active' -->
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./public/sobre.html"
-                      >Sobre</a
-                    >
+                    <!-- Outro item da lista -->
+                    <a class="nav-link" href="./public/sobre.html">Sobre</a>
+                    <!-- Link para a página "Sobre" -->
                   </li>
                   <li class="nav-item">
+                    <!-- Outro item da lista -->
                     <a class="nav-link" href="./public/carrinho.html"
                       >Carrinho</a
                     >
+                    <!-- Link para a página do carrinho -->
                   </li>
                   <li class="nav-item">
+                    <!-- Outro item da lista -->
                     <a class="nav-link" href="./public/lanchas.html"
                       >Catálogo</a
                     >
+                    <!-- Link para a página do catálogo de lanchas -->
                   </li>
                   <li class="nav-item dropdown" style="display: none">
+                    <!-- Item de lista para um dropdown, inicialmente oculto -->
                     <a
                       class="nav-link dropdown-toggle"
                       href="#"
@@ -144,61 +201,90 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
+                      <!-- Link que ativa o dropdown -->
                       Escolha sua lancha
                     </a>
                     <ul class="dropdown-menu">
+                      <!-- Menu suspenso -->
                       <li>
                         <a class="dropdown-item" href="./public/lanchas.html"
-                          >lanchas</a
+                          >Lanchas</a
                         >
+                        <!-- Link para a página de lanchas -->
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">Another action</a>
+                        <!-- Outro item do dropdown -->
                       </li>
                       <li><hr class="dropdown-divider" /></li>
+                      <!-- Divisor no dropdown -->
                       <li>
                         <a class="dropdown-item" href="#"
                           >Something else here</a
                         >
+                        <!-- Outro item do dropdown -->
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
+                    <!-- Outro item da lista -->
                     <a class="nav-link" href="./public/login.html"
                       >Inscreva-se</a
                     >
+                    <!-- Link para a página de inscrição -->
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
+                  <!-- Formulário de busca dentro do modal -->
                   <input
                     class="form-control me-2"
                     type="search"
                     placeholder="Buscar"
                     aria-label="Search"
                   />
+                  <!-- Campo de entrada para busca -->
                   <button class="btn btn-outline-success" type="submit">
                     Buscar
                   </button>
+                  <!-- Botão para enviar a busca -->
                 </form>
               </div>
+              <!-- Fim do corpo do modal -->
             </div>
+            <!-- Fim do conteúdo do modal -->
           </div>
+          <!-- Fim do diálogo do modal -->
         </div>
+        <!-- Fim do modal -->
       </div>
+      <!-- Fim do container fluido -->
     </nav>
+    <!-- Fim da barra de navegação -->
     <main class="main">
+      <!-- Início da seção principal da página -->
       <div class="conteudo-flex">
+        <!-- Div que utiliza flexbox para organizar o conteúdo -->
         <div class="coluna-lancha">
+          <!-- Coluna dedicada às lanchas -->
           <div class="container">
+            <!-- Container para agrupar elementos -->
             <p class="passeios">Passeios Marítimos > Lanchas</p>
+            <!-- Texto de navegação ou título secundário -->
             <h1 class="h1-passeios">
+              <!-- Título principal da seção -->
               LANCHAS: <br />
+              <!-- Quebra de linha -->
               ESCOLHA O <br />
+              <!-- Quebra de linha -->
               SEU <br />
+              <!-- Quebra de linha -->
               MODELO
+              <!-- Texto final do título -->
             </h1>
             <a class="link-sem-underline" href="./public/lanchas.html">
+              <!-- Link para a página de reservas de lanchas -->
               <p class="p-passeios">Reservar</p>
+              <!-- Texto do link -->
             </a>
           </div>
           <video
@@ -210,26 +296,50 @@
           ></video>
         </div>
         <div class="coluna-video-texto">
+          <!-- Coluna que contém um vídeo e texto -->
           <video
             class="segundo-video"
             muted
             autoplay
             loop
             src="./assets/videos/video_lanchas_doca.mp4"
-          ></video>
+          >
+            <!--
+            Classe
+            para
+            estilização
+            do
+            segundo
+            vídeo
+            -->
+          </video>
           <h1 class="experiencia-texto">
-            SUA EXPERIÊNCIA <br />INESQUECÍVEL <br />
+            <!-- Título que descreve a experiência -->
+            SUA EXPERIÊNCIA <br />
+            <!-- Quebra de linha -->
+            INESQUECÍVEL <br />
+            <!-- Quebra de linha -->
             COMEÇA AQUI - <br />
+            <!-- Quebra de linha -->
             ENCONTRE A <br />
+            <!-- Quebra de linha -->
             LANCHA IDEAL
+            <!-- Texto final do título -->
           </h1>
         </div>
       </div>
     </main>
     <section class="section-perguntas py-5" id="saiba-mais">
+      <!-- Início da seção de perguntas frequentes -->
+      <!-- Título da seção -->
       <h1 class="section-titulo">Perguntas Frequentes</h1>
+      <!-- Título principal da seção -->
+
+      <!-- Container do Bootstrap para centralizar e ajustar o layout -->
       <div class="container">
+        <!-- Bloco que agrupa todas as perguntas -->
         <div class="pergunta">
+          <!-- Primeira pergunta - utiliza Bootstrap Collapse para abrir/fechar -->
           <p class="pergunta-pergunta">
             <a
               data-bs-toggle="collapse"
@@ -239,12 +349,31 @@
               aria-controls="#collapsePergunta1"
               >Qual a capacidade das lanchas de vocês?</a
             >
+            <!--Ativa
+              o
+              comportamento
+              de
+              colapso
+              do
+              Bootstrap
+              -->
+            <!-- ID do elemento que será colapsado -->
+            <!-- Define o papel do link como botão -->
+            <!-- Indica se o elemento está expandido ou não -->
+            <!-- ID do elemento controlado -->
+            <!-- Texto da pergunta -->
           </p>
+          <!-- Resposta que será mostrada/ocultada -->
           <div class="collapse" id="collapsePergunta1">
+            <!-- Div que contém a resposta, inicialmente oculta -->
             <div class="resposta-pergunta">
-              Oferecemos opções de embarcações que variam entre 7 à 21 passageiros, confira no nosso catálogo!
+              <!-- Bloco para a resposta -->
+              Oferecemos opções de embarcações que variam entre 7 à 21
+              passageiros, confira no nosso catálogo!
             </div>
           </div>
+
+          <!-- Segunda pergunta -->
           <p class="pergunta-pergunta">
             <a
               data-bs-toggle="collapse"
@@ -254,12 +383,18 @@
               aria-controls="#collapsePergunta2"
               >O que é incluso na locação?</a
             >
+            <!-- Texto da pergunta -->
           </p>
           <div class="collapse" id="collapsePergunta2">
+            <!-- Div que contém a resposta -->
             <div class="resposta-pergunta">
-              Na locação são inclusos combustível , marinheiro , preparo e serviço do churrasco
+              <!-- Bloco para a resposta -->
+              Na locação são inclusos combustível, marinheiro, preparo e serviço
+              do churrasco
             </div>
           </div>
+
+          <!-- Terceira pergunta -->
           <p class="pergunta-pergunta">
             <a
               data-bs-toggle="collapse"
@@ -269,12 +404,17 @@
               aria-controls="#collapsePergunta3"
               >Quais são as formas de pagamento?</a
             >
+            <!-- Texto da pergunta -->
           </p>
           <div class="collapse" id="collapsePergunta3">
+            <!-- Div que contém a resposta -->
             <div class="resposta-pergunta">
+              <!-- Bloco para a resposta -->
               Nossas formas de pagamento são Pix, transferência ou espécie
             </div>
           </div>
+
+          <!-- Quarta pergunta -->
           <p class="pergunta-pergunta">
             <a
               data-bs-toggle="collapse"
@@ -284,12 +424,18 @@
               aria-controls="#collapsePergunta4"
               >Criança paga?</a
             >
+            <!-- Texto da pergunta -->
           </p>
           <div class="collapse" id="collapsePergunta4">
+            <!-- Div que contém a resposta -->
             <div class="resposta-pergunta">
-              Nossos valores são por locação, independente se for criança ou adulto
+              <!-- Bloco para a resposta -->
+              Nossos valores são por locação, independente se for criança ou
+              adulto
             </div>
           </div>
+
+          <!-- Quinta pergunta -->
           <p class="pergunta-pergunta">
             <a
               data-bs-toggle="collapse"
@@ -299,27 +445,50 @@
               aria-controls="#collapsePergunta5"
               >Como faço para agendar?</a
             >
+            <!-- Texto da pergunta -->
           </p>
           <div class="collapse" id="collapsePergunta5">
+            <!-- Div que contém a resposta -->
             <div class="resposta-pergunta">
-              Você pode agendar pelo nosso site, ou falar com um de nossos atendentes no WhatsApp
+              <!-- Bloco para a resposta -->
+              Você pode agendar pelo nosso site, ou falar com um de nossos
+              atendentes no WhatsApp
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Início do rodapé -->
     <footer class="footer">
+      <!-- Início do rodapé da página -->
+      <!-- Container principal do rodapé -->
       <div class="footer-main">
         <ul class="lista-footer">
+          <!-- Lista de links principais do rodapé -->
+          <!-- Link para a página inicial -->
           <li class="lista-item-footer"><a href="#">INICIO</a></li>
+          <!-- Link para a página "Sobre" -->
           <li class="lista-item-footer">
             <a href="./public/sobre.html">SOBRE A PASSEIOS MARÍTIMOS</a>
           </li>
-          <li class="lista-item-footer"><a href="./public/lanchas.html">ESCOLHA A SUA LANCHA</a></li>
-          <li class="lista-item-footer"><a href="">CONTATO</a></li>
+          <!-- Link para a página de catálogo de lanchas -->
+          <li class="lista-item-footer">
+            <a href="./public/lanchas.html">ESCOLHA A SUA LANCHA</a>
+          </li>
+          <!-- Link para contato via WhatsApp -->
+          <li class="lista-item-footer">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5583996307840&text&type=phone_number&app_absent=0" target="_blank"
+              >CONTATO</a
+            >
+          </li>
         </ul>
         <ul class="encontrar-footer">
+          <!-- Lista de informações de contato -->
+          <!-- Título da seção "Onde nos encontrar" -->
           <h3 class="encontrar-titulo-footer">ONDE NOS ENCONTRAR</h3>
+          <!-- Endereço com link para o Google Maps, abre em nova aba -->
           <li>
             <p class="encontrar-item-footer">
               <a
@@ -329,6 +498,7 @@
               >
             </p>
           </li>
+          <!-- E-mail de contato como link que abre no app de e-mail -->
           <li>
             <p class="encontrar-item-footer">
               <a href="mailto:contato@passeiosmaritimos.com.br"
@@ -338,6 +508,7 @@
           </li>
         </ul>
       </div>
+      <!-- Texto de direitos autorais no final do rodapé -->
       <p class="direitos-footer">
         © 2025 Passeios Marítimos - Todos os direitos reservados.
       </p>
